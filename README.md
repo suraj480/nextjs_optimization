@@ -8,7 +8,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 To start the development server, run one of the following commands:
 
-```bash
+
 npm run dev
 # or
 yarn dev
@@ -43,7 +43,7 @@ Eager loading refers to **preloading or pre-importing components or assets** so 
 3.Fonts -Use next/font with eager configuration
 4.Scripts
 5.Routes use Router.prefetch()
-```
+
 
 ## ⏱️ Optimizing FCP and LCP in Next.js
 
