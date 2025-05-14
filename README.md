@@ -8,14 +8,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 To start the development server, run one of the following commands:
 
-
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ## Lazy Loading in Next.js
 
 Lazy loading is a technique where **components**, **images**, or **modules** are loaded *only when needed*—usually when they enter the viewport or are triggered via user interaction (e.g., a button click).
