@@ -1,8 +1,12 @@
 "use client";
+import Info from "@/components/Info/Info";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 import React, { useState } from "react";
+import { Inter } from "next/font/google";
 
+
+const inter = Inter({ subsets: ["greek"] });
 //Dynamically import the TeamDetails component (Lazy loaded)
 const TeamDetails = dynamic(() => import("../../components/TeamDetails"), {
   loading: () => <p>Loading...</p>,
@@ -27,12 +31,16 @@ const About = () => {
       <br /><br />
       <a href="/Pdf/Eloquent_JavaScript_small.pdf" target="_blank">Download</a>
       <hr />
+
+      {/* lazy loading */}
       <button className="btn btn-primary" onClick={() => setShowTeam(!showTeam)}>
         {showTeam ? "Hide Team Details" : "Show Team Details"}
       </button>
       {showTeam && <TeamDetails />}
       <hr />
-      <p className="lead">We are a group of passionate developers building awesome things.</p>
+      <p className={inter.className} >We are a group of passionate developers building awesome things.</p>
+      {/* Eager loading */}
+      <Info />
 
     </div >
   );
